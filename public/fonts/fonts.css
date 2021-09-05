@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'Gosha Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Gosha Sans'), local('GoshaSans'),
+    url('./GoshaSans-Regular.woff') format('woff')
+}
+@font-face {
+    font-family: 'Gosha Sans';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Gosha Sans'), local('GoshaSans'),
+    url('./GoshaSans-Bold.woff') format('woff')
+}
+
+@font-face {
+    font-family: 'Root UI';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Root UI'), local('RootUI'),
+    url('./PTRootUI-Light.woff') format('woff')
+}
+@font-face {
+    font-family: 'Root UI';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Root UI'), local('RootUI'),
+    url('./PTRootUI-Regular.woff2') format('woff2')
+}
+@font-face {
+    font-family: 'Root UI';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Root UI'), local('RootUI'),
+    url('./PTRootUI-Medium.woff2') format('woff2')
+}
+@font-face {
+    font-family: 'Root UI';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Root UI'), local('RootUI'),
+    url('./PTRootUI-Bold.woff') format('woff')
+}

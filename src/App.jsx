@@ -1,45 +1,53 @@
-import React, { useState } from 'react'
-import logo from './logo.svg'
-import './App.css'
+import styled from 'styled-components';
+import Header from './components/Header';
+import BestSellers from './components/BestSellers';
+import React from 'react';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello Vite + React!</p>
-        <p>
-          <button type="button" onClick={() => setCount((count) => count + 1)}>
-            count is: {count}
-          </button>
-        </p>
-        <p>
-          Edit <code>App.jsx</code> and save to test HMR updates.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-          {' | '}
-          <a
-            className="App-link"
-            href="https://vitejs.dev/guide/features.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Vite Docs
-          </a>
-        </p>
-      </header>
-    </div>
-  )
+    <StyledWrapper>
+      <Header />
+      <TitleStyled>Clothes with character</TitleStyled>
+      <SubtitleStyled>
+        Stylish clothes for traveling and walking around the city
+      </SubtitleStyled>
+      <HeroImgStyled />
+      <BestSellers />
+    </StyledWrapper>
+  );
 }
 
-export default App
+const StyledWrapper = styled.div`
+  margin-left: 60px;
+  margin-right: 60px;
+  padding-top: 20px;
+`;
+const TitleStyled = styled.div`
+  font-family: 'Gosha Sans', sans-serif;
+  font-size: 95.4px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000;
+  background-color: #fff;
+  margin-bottom: 7px;
+`;
+const SubtitleStyled = styled.div`
+  font-family: 'Gosha Sans', sans-serif;
+  font-size: 39px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 37px;
+`;
+const HeroImgStyled = styled.div`
+  height: 829px;
+  width: auto;
+  background-image: url('/images/hero.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 202px;
+`;
+
+export default App;
