@@ -18,12 +18,12 @@ function App() {
 }
 
 const StyledWrapper = styled.div`
-  padding-left: 60px;
-  padding-right: 60px;
-  padding-top: 20px;
-  max-width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 60px;
+  margin-right: 60px;
+  //padding-top: 20px;
+  //max-width: 1440px;
+  //margin-left: auto;
+  //margin-right: auto;
 `;
 const TitleStyled = styled.div`
   font-family: 'Gosha Sans', sans-serif;
