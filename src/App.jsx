@@ -18,13 +18,16 @@ function App() {
 }
 
 const StyledWrapper = styled.div`
-  margin-left: 60px;
-  margin-right: 60px;
+  padding-left: 60px;
+  padding-right: 60px;
   padding-top: 20px;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 `;
 const TitleStyled = styled.div`
   font-family: 'Gosha Sans', sans-serif;
-  font-size: 95.4px;
+  font-size: 94px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-align: center;
