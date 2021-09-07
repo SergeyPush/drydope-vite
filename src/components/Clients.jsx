@@ -7,7 +7,7 @@ import { ReactSVG } from "react-svg";
 const Clients = () => {
   return (
     <WrapperStyled>
-      <MenuItem title="Our clients" />
+      <MenuItem title="Corporate clients" />
       <div className="clients-wrapper">
         <ClientsTitleStyled>
           branded solutions for your company
@@ -35,12 +35,22 @@ const WrapperStyled = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     width: 100%;
-    row-gap: 68px;
+    //row-gap: 68px;
   }
 
   .item {
     align-self: center;
     justify-self: center;
+    border-top: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    width: 100%;
+  }
+
+  .item:nth-child(n + 5) {
+    border-bottom: 1px solid white;
   }
 `;
 const ClientsTitleStyled = styled.p`
