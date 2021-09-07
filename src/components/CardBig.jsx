@@ -1,29 +1,28 @@
-import React from 'react';
-import styled from 'styled-components';
-import { useState } from 'react';
+import React, { useEffect, useMemo, useRef } from "react";
+import styled from "styled-components";
+import { useState } from "react";
 
 const CardBig = ({ data }) => {
-  const [hovered, setHovered] = useState(false);
   const { name, price, imageOne, imageTwo } = data;
+  const [bg, setBg] = useState(imageOne);
 
-  const getImage = () => {
-    if (hovered && imageTwo) {
-      return imageTwo;
-    }
-    return imageOne;
+  const onMouseOver = () => {
+    setBg(imageTwo ? imageTwo : imageOne);
+  };
+  const onMouseOut = () => {
+    setBg(imageOne);
   };
 
   return (
     <CardStyled
-      onMouseEnter={() => {
-        setHovered(true);
+      onMouseOver={(e) => {
+        onMouseOver(e);
       }}
-      onMouseLeave={() => {
-        setHovered(false);
+      onMouseOut={(e) => {
+        onMouseOut(e);
       }}
-      hovered={hovered}
     >
-      <ImageStyled hovered={hovered} image={getImage} />
+      <div className="image-div" style={{ backgroundImage: `url(${bg})` }} />
       <div className="title">
         <span className="title-name">{name}</span>
         <span className="price">{price} UAH</span>
@@ -38,19 +37,28 @@ const CardStyled = styled.div`
     flex-direction: row;
     justify-content: space-between;
     padding: 20px;
-    background-color: ${(props) => (props.hovered ? '#F9C202;' : '#000')};
-    color: ${(props) => (props.hovered ? '#000' : '#fff')};
     border-radius: 0 0 30px 30px;
+    color: #fff;
   }
-`;
-const ImageStyled = styled.div`
-  border-radius: ${(props) => (props.hovered ? '30px 30px 0px 0px' : '30px')};
-  width: 100%;
-  height: 612px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-image: url(${(props) => props.image});
+
+  .image-div {
+    width: 100%;
+    height: 612px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: all 0.1s linear;
+    border-radius: 30px;
+  }
+
+  &:hover .title {
+    color: #fff;
+    background-color: #f9c202;
+  }
+
+  &:hover .image-div {
+    border-radius: 30px 30px 0 0;
+  }
 `;
 
 export default CardBig;

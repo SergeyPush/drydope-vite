@@ -6,6 +6,8 @@ import AboutUs from "./components/AboutUs";
 import OurInstagram from "./components/OurInstagram";
 
 function App() {
+  console.log("rerender");
+
   return (
     <StyledWrapper>
       <Header />
