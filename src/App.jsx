@@ -4,10 +4,9 @@ import BestSellers from "./components/BestSellers";
 import React from "react";
 import AboutUs from "./components/AboutUs";
 import OurInstagram from "./components/OurInstagram";
+import Clients from "./components/Clients";
 
 function App() {
-  console.log("rerender");
-
   return (
     <StyledWrapper>
       <Header />
@@ -19,6 +18,7 @@ function App() {
       <BestSellers />
       <AboutUs />
       <OurInstagram />
+      <Clients />
     </StyledWrapper>
   );
 }

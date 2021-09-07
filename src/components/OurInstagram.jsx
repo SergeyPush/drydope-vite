@@ -63,6 +63,7 @@ const StoreStyled = styled.p`
   font-family: "PT Root UI", sans-serif;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 145px;
 `;
 
 export default OurInstagram;

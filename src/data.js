@@ -41,3 +41,13 @@ export const instagram = {
   inst2: "/images/inst2.jpg",
   inst3: "/images/inst3.jpg",
 };
+export const clients = [
+  { image: "/svg/eurotrip.svg" },
+  { image: "/svg/kernel.svg" },
+  { image: "/svg/megogo.svg" },
+  { image: "/svg/moneyveo.svg" },
+  { image: "/svg/mother.svg" },
+  { image: "/svg/new.svg" },
+  { image: "/svg/uklon.svg" },
+  { image: "/svg/wix.svg" },
+];
