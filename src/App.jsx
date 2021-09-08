@@ -5,6 +5,7 @@ import React from "react";
 import AboutUs from "./components/AboutUs";
 import OurInstagram from "./components/OurInstagram";
 import Clients from "./components/Clients";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <AboutUs />
       <OurInstagram />
       <Clients />
+      <Footer />
     </StyledWrapper>
   );
 }
