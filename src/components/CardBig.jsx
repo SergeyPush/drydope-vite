@@ -1,6 +1,6 @@
-import React, { useEffect, useMemo, useRef } from "react";
-import styled from "styled-components";
-import { useState } from "react";
+import React, { useEffect, useMemo, useRef } from 'react';
+import styled from 'styled-components';
+import { useState } from 'react';
 
 const CardBig = ({ data }) => {
   const { name, price, imageOne, imageTwo } = data;
@@ -22,7 +22,9 @@ const CardBig = ({ data }) => {
         onMouseOut(e);
       }}
     >
-      <div className="image-div" style={{ backgroundImage: `url(${bg})` }} />
+      <div className="image-div" style={{ backgroundImage: `url(${bg})` }}>
+        <img src="/images/buy.png" alt="buy image" className="image-buy" />
+      </div>
       <div className="title">
         <span className="title-name">{name}</span>
         <span className="price">{price} UAH</span>
@@ -49,6 +51,17 @@ const CardStyled = styled.div`
     background-size: cover;
     transition: all 0.1s linear;
     border-radius: 30px;
+    padding-top: 100px;
+  }
+  .image-buy {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    animation-name: rotate;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    display: none;
   }
 
   &:hover .title {
@@ -58,6 +71,18 @@ const CardStyled = styled.div`
 
   &:hover .image-div {
     border-radius: 30px 30px 0 0;
+  }
+  &:hover .image-buy {
+    display: block;
+  }
+
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
   }
 `;
 
