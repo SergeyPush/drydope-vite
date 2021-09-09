@@ -9,19 +9,16 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <StyledWrapper>
+    <>
       <Header />
-      <TitleStyled>Clothes with character</TitleStyled>
-      <SubtitleStyled>
-        Stylish clothes for traveling and walking around the city
-      </SubtitleStyled>
-      <HeroImgStyled />
-      <BestSellers />
-      <AboutUs />
-      <OurInstagram />
-      <Clients />
-      <Footer />
-    </StyledWrapper>
+      <StyledWrapper>
+        <BestSellers />
+        <AboutUs />
+        <OurInstagram />
+        <Clients />
+        <Footer />
+      </StyledWrapper>
+    </>
   );
 }
 
