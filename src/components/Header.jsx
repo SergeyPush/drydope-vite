@@ -38,13 +38,13 @@ const Header = () => {
 const NavigationWrapper = styled.div`
   padding-top: 20px;
   height: calc(100vh);
-  margin-bottom: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   background-image: url("./images/heroimage.png");
   background-repeat: no-repeat;
   background-position: bottom left;
+  margin-bottom: 160px;
 `;
 
 const HeroStyled = styled.div`
