@@ -1,32 +1,34 @@
-import styled from 'styled-components';
-import Header from './components/Header';
-import BestSellers from './components/BestSellers';
-import React from 'react';
+import styled from "styled-components";
+import Header from "./components/Header";
+import BestSellers from "./components/BestSellers";
+import React from "react";
+import AboutUs from "./components/AboutUs";
+import OurInstagram from "./components/OurInstagram";
+import Clients from "./components/Clients";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <StyledWrapper>
+    <>
       <Header />
-      <TitleStyled>Clothes with character</TitleStyled>
-      <SubtitleStyled>
-        Stylish clothes for traveling and walking around the city
-      </SubtitleStyled>
-      <HeroImgStyled />
-      <BestSellers />
-    </StyledWrapper>
+      <StyledWrapper>
+        <BestSellers />
+        <AboutUs />
+        <OurInstagram />
+        <Clients />
+        <Footer />
+      </StyledWrapper>
+    </>
   );
 }
 
 const StyledWrapper = styled.div`
-  padding-left: 60px;
-  padding-right: 60px;
+  margin-left: 60px;
+  margin-right: 60px;
   padding-top: 20px;
-  max-width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
 `;
 const TitleStyled = styled.div`
-  font-family: 'Gosha Sans', sans-serif;
+  font-family: "Gosha Sans", sans-serif;
   font-size: 94px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -36,7 +38,7 @@ const TitleStyled = styled.div`
   margin-bottom: 7px;
 `;
 const SubtitleStyled = styled.div`
-  font-family: 'Gosha Sans', sans-serif;
+  font-family: "Gosha Sans", sans-serif;
   font-size: 39px;
   text-transform: uppercase;
   color: #ffffff;
@@ -46,7 +48,7 @@ const SubtitleStyled = styled.div`
 const HeroImgStyled = styled.div`
   height: 829px;
   width: auto;
-  background-image: url('/images/hero.jpg');
+  background-image: url("/images/hero.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
