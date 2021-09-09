@@ -55,7 +55,7 @@ const HeroStyled = styled.div`
 
   .title {
     font-family: "Gosha Sans", sans-serif;
-    font-size: 149px;
+    font-size: 140px;
     line-height: 100%;
     text-align: right;
     letter-spacing: 0.03em;
