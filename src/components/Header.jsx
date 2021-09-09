@@ -51,7 +51,7 @@ const HeroStyled = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 90%;
+  padding: 0 60px;
 
   .title {
     font-family: "Gosha Sans", sans-serif;
