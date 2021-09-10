@@ -27,7 +27,7 @@ const Clients = () => {
 };
 
 const PaddingWrapper = styled.div`
-  padding: 0 30px;
+  padding: 0 60px;
 `;
 
 const WrapperStyled = styled.div`

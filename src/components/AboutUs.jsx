@@ -20,7 +20,9 @@ const AboutUs = () => {
   );
 };
 
-const WrapperStyled = styled.div``;
+const WrapperStyled = styled.div`
+  padding: 0 60px;
+`;
 
 const TextStyled = styled.p`
   font-style: normal;
