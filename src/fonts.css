@@ -3,14 +3,14 @@
   font-style: normal;
   font-weight: 400;
   src: local('Gosha Sans'), local('GoshaSans'),
-    url('./fonts/GoshaSans-Regular.woff') format('woff');
+    url('/fonts/GoshaSans-Regular.woff') format('woff');
 }
 @font-face {
   font-family: 'Gosha Sans';
   font-style: normal;
   font-weight: 600;
   src: local('Gosha Sans'), local('GoshaSans'),
-    url('./fonts/GoshaSans-Bold.woff') format('woff');
+    url('/fonts/GoshaSans-Bold.woff') format('woff');
 }
 
 @font-face {
@@ -18,26 +18,26 @@
   font-style: normal;
   font-weight: 300;
   src: local('Root UI'), local('RootUI'),
-    url('./fonts/PTRootUI-Light.woff') format('woff');
+    url('/fonts/PTRootUI-Light.woff') format('woff');
 }
 @font-face {
   font-family: 'Root UI';
   font-style: normal;
   font-weight: 400;
   src: local('Root UI'), local('RootUI'),
-    url('./fonts/PTRootUI-Regular.woff2') format('woff2');
+    url('/fonts/PTRootUI-Regular.woff2') format('woff2');
 }
 @font-face {
   font-family: 'Root UI';
   font-style: normal;
   font-weight: 500;
   src: local('Root UI'), local('RootUI'),
-    url('./fonts/PTRootUI-Medium.woff2') format('woff2');
+    url('/fonts/PTRootUI-Medium.woff2') format('woff2');
 }
 @font-face {
   font-family: 'Root UI';
   font-style: normal;
   font-weight: 600;
   src: local('Root UI'), local('RootUI'),
-    url('./fonts/PTRootUI-Bold.woff') format('woff');
+    url('/fonts/PTRootUI-Bold.woff') format('woff');
 }
