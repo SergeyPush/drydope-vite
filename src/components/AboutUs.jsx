@@ -8,7 +8,7 @@ const AboutUs = () => {
     <WrapperStyled>
       <Title title="About Us" />
       <TextStyled>
-        <ImCancelCircle className="logo-icon" /> <span>Drydope</span> We are a{' '}
+        <ImCancelCircle className="logo-icon" /> <span>Drydope</span> is an{' '}
         <span className="underlined">Ukrainian</span> brand clothes with
         character. Our <span className="underlined">team</span> of creative
         people combines practicality, style and{' '}

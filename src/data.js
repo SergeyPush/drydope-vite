@@ -51,3 +51,12 @@ export const clients = [
   // { image: '/svg/kernel.svg' },
   // { image: '/svg/moneyveo.svg' },
 ];
+
+export const collection = [
+  { name: 'Raincoats', image: '/images/collection1.jpg' },
+  { name: 'Hoodie', image: '/images/collection2.jpg' },
+  { name: 'Bags', image: '/images/collection3.jpg' },
+  { name: 'Panama', image: '/images/collection4.jpg' },
+  { name: 'Vest', image: '/images/collection5.jpg' },
+  { name: 'For kids', image: '/images/collection5.jpg' },
+];

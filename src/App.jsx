@@ -6,6 +6,7 @@ import AboutUs from './components/AboutUs';
 import OurInstagram from './components/OurInstagram';
 import Clients from './components/Clients';
 import Footer from './components/Footer';
+import Collection from './components/Collection';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Header />
       <StyledWrapper>
         <BestSellers />
+        <Collection />
         <AboutUs />
         <OurInstagram />
         <Clients />

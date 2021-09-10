@@ -2,7 +2,7 @@ import React from 'react';
 import CardBig from './CardBig';
 import styled from 'styled-components';
 import { bestsellers as data } from '../data';
-import MenuItem from './MenuItem';
+
 import Title from './Title';
 
 const BestSellers = () => {

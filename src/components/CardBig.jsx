@@ -34,6 +34,7 @@ const CardBig = ({ data }) => {
 };
 
 const CardStyled = styled.div`
+  cursor: pointer;
   .title {
     display: flex;
     flex-direction: row;
@@ -49,7 +50,6 @@ const CardStyled = styled.div`
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    transition: all 0.1s linear;
     border-radius: 30px;
     padding-top: 100px;
   }
