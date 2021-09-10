@@ -1,5 +1,5 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
 const Header = () => {
   return (
@@ -41,7 +41,7 @@ const NavigationWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-image: url("./images/heroimage.png");
+  background-image: url('./images/heroimage.png');
   background-repeat: no-repeat;
   background-position: bottom left;
   margin-bottom: 160px;
@@ -54,8 +54,8 @@ const HeroStyled = styled.div`
   padding: 0 60px;
 
   .title {
-    font-family: "Gosha Sans", sans-serif;
-    font-size: 140px;
+    font-family: 'Gosha Sans', sans-serif;
+    font-size: 146px;
     line-height: 100%;
     text-align: right;
     letter-spacing: 0.03em;
@@ -72,7 +72,7 @@ const HeroStyled = styled.div`
     width: 200px;
     height: 100px;
     border-radius: 60px;
-    background-image: url("./images/hero.jpg");
+    background-image: url('./images/hero.jpg');
     background-position: top left;
     background-repeat: no-repeat;
     background-size: cover;
@@ -84,10 +84,10 @@ const HeroStyled = styled.div`
 
   .shop {
     display: block;
-    font-family: "Gosha Sans", sans-serif;
+    font-family: 'Gosha Sans', sans-serif;
     font-size: 40px;
     text-transform: uppercase;
-    padding: 20px 20px;
+    padding: 20px 34px;
     background-color: transparent;
     border: 3px solid #fff;
     border-radius: 60px;
@@ -104,7 +104,7 @@ const HeroStyled = styled.div`
 `;
 const ParagraphStyled = styled.p`
   background: #f9c202;
-  font-family: "Gosha Sans", sans-serif;
+  font-family: 'Gosha Sans', sans-serif;
   font-size: 39px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -121,7 +121,7 @@ const NavigationStyled = styled.div`
   padding: 0 60px;
 `;
 const LogoStyled = styled.div`
-  font-family: "Gosha Sans", sans-serif;
+  font-family: 'Gosha Sans', sans-serif;
   font-weight: normal;
   font-size: 25px;
   text-transform: uppercase;

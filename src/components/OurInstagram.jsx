@@ -33,7 +33,7 @@ const WrapperStyled = styled.div`
 const CardListStyled = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
 `;
 const ImageItemStyled = styled.div`
   width: 390px;

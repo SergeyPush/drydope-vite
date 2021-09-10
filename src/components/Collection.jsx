@@ -52,9 +52,10 @@ const ImageStyled = styled.div`
   z-index: 10;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto;
   pointer-events: none;
   transition: all 0.4s ease-in-out;
+  overflow: hidden;
   /* transform: translateY(100px); */
 `;
 
