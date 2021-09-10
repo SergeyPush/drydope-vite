@@ -1,10 +1,12 @@
 import React from 'react';
 import { ImCancelCircle } from 'react-icons/im';
+import Title from './Title';
 import styled from 'styled-components';
 
 const AboutUs = () => {
   return (
     <WrapperStyled>
+      <Title title="About Us" />
       <TextStyled>
         <ImCancelCircle className="logo-icon" /> <span>Drydope</span> We are a{' '}
         <span className="underlined">Ukrainian</span> brand clothes with

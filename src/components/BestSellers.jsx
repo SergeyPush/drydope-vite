@@ -1,9 +1,9 @@
-import React from "react";
-import CardBig from "./CardBig";
-import styled from "styled-components";
-import { bestsellers as data } from "../data";
-import MenuItem from "./MenuItem";
-import Title from "./Title";
+import React from 'react';
+import CardBig from './CardBig';
+import styled from 'styled-components';
+import { bestsellers as data } from '../data';
+import MenuItem from './MenuItem';
+import Title from './Title';
 
 const BestSellers = () => {
   return (
@@ -20,6 +20,10 @@ const BestSellers = () => {
 
 const WrapperStyled = styled.div`
   margin-bottom: 180px;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 80px;
+  border-bottom: 0.5px solid #fff;
 
   .card-list {
     width: 100%;
