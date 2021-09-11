@@ -14,8 +14,8 @@ function App() {
       <Header />
       <StyledWrapper>
         <BestSellers />
-        <Collection />
         <AboutUs />
+        <Collection />
         <OurInstagram />
         <Clients />
         <Footer />

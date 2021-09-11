@@ -19,10 +19,10 @@ const BestSellers = () => {
 };
 
 const WrapperStyled = styled.div`
-  margin-bottom: 180px;
+  margin-bottom: 80px;
   padding-left: 60px;
   padding-right: 60px;
-  padding-bottom: 80px;
+  padding-bottom: 40px;
   border-bottom: 0.5px solid #fff;
 
   .card-list {

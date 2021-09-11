@@ -8,11 +8,11 @@ const OurInstagram = () => {
   return (
     <div>
       <WrapperStyled>
-        <Title title="Our Instagram" />
+        <Title title="Our Instagram" mb={35} />
         <StoreStyled>
           <div className="title title-one">follow us @drydope.store</div>
           <div className="title title-two">
-            More info <FiArrowRight />
+            1-3 / 307 posts <FiArrowRight />
           </div>
         </StoreStyled>
         <CardListStyled>
@@ -28,7 +28,7 @@ const OurInstagram = () => {
 const WrapperStyled = styled.div`
   padding-left: 60px;
   padding-right: 60px;
-  margin-bottom: 160px;
+  margin-bottom: 150px;
 `;
 const CardListStyled = styled.div`
   display: flex;

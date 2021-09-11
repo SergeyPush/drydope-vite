@@ -16,16 +16,16 @@ const Collection = () => {
   return (
     <WrapperStyled>
       <PaddingStyled>
-        <Title title="Collection" />
-        <ParagraphStyled>Select Category</ParagraphStyled>
+        <Title title="Collection" mb={34} />
+        <ParagraphStyled>Select A Category</ParagraphStyled>
       </PaddingStyled>
       <ListStyled>
-        {image && (
+        {
           <ImageStyled
             style={{ backgroundImage: `url(${image})` }}
             className="image"
           />
-        )}
+        }
         {collection.map((item, index) => (
           <ItemStyled
             image={image}
@@ -44,10 +44,10 @@ const Collection = () => {
 
 const ImageStyled = styled.div`
   position: absolute;
-  width: 40%;
-  height: 110%;
-  top: -30px;
-  transform: translateX(700px);
+  width: 52%;
+  height: 124%;
+  top: -44px;
+  transform: translateX(520px);
   border-radius: 30px;
   z-index: 10;
   background-position: center;
@@ -60,14 +60,14 @@ const ImageStyled = styled.div`
 `;
 
 const WrapperStyled = styled.div`
-  margin-bottom: 200px;
+  margin-bottom: 210px;
 `;
 const PaddingStyled = styled.div`
   padding: 0 60px;
   font-family: PT Root UI;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
 `;
 const ParagraphStyled = styled.p`
   font-size: 16px;
@@ -83,9 +83,11 @@ const ItemStyled = styled.li`
   border-top: 1px solid #fff;
   font-family: 'Gosha Sans', sans-serif;
   font-size: 55px;
+  line-height: 66px;
   text-transform: uppercase;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
+  height: 76px;
 
   &:last-child {
     border-bottom: 1px solid #fff;

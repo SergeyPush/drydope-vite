@@ -1,11 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
+import { ImCancelCircle } from 'react-icons/im';
 
 const Header = () => {
   return (
     <NavigationWrapper>
       <NavigationStyled className="navigation">
-        <LogoStyled>Drydope</LogoStyled>
+        <LogoStyled>
+          <ImCancelCircle className="logo-icon" /> Drydope
+        </LogoStyled>
         <ControlsStyled>
           <ul className="menu">
             <li className="menu-item">Shop</li>
@@ -36,15 +39,14 @@ const Header = () => {
   );
 };
 const NavigationWrapper = styled.div`
-  padding-top: 20px;
-  height: calc(100vh);
+  height: 880px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   background-image: url('./images/heroimage.png');
   background-repeat: no-repeat;
   background-position: bottom left;
-  margin-bottom: 160px;
+  margin-bottom: 140px;
 `;
 
 const HeroStyled = styled.div`
@@ -58,7 +60,7 @@ const HeroStyled = styled.div`
     font-size: 146px;
     line-height: 100%;
     text-align: right;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.034em;
     text-transform: uppercase;
   }
 
@@ -76,10 +78,18 @@ const HeroStyled = styled.div`
     background-position: top left;
     background-repeat: no-repeat;
     background-size: cover;
+    margin-left: 30px;
+    margin-top: 20px;
+  }
+
+  .title-top {
+    margin-bottom: 14px;
   }
 
   .title-bottom {
     margin-bottom: 80px;
+    text-align: justify;
+    width: 100%;
   }
 
   .shop {
@@ -87,7 +97,7 @@ const HeroStyled = styled.div`
     font-family: 'Gosha Sans', sans-serif;
     font-size: 40px;
     text-transform: uppercase;
-    padding: 20px 34px;
+    padding: 22px 34px;
     background-color: transparent;
     border: 3px solid #fff;
     border-radius: 60px;
@@ -109,7 +119,8 @@ const ParagraphStyled = styled.p`
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #030303;
-  text-align: center;
+  text-align: justify;
+  padding: 5px 60px;
 `;
 
 const NavigationStyled = styled.div`
@@ -117,18 +128,24 @@ const NavigationStyled = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 29px;
   padding: 0 60px;
+  margin-top: 24px;
+  margin-bottom: 100px;
 `;
 const LogoStyled = styled.div`
   font-family: 'Gosha Sans', sans-serif;
   font-weight: normal;
   font-size: 25px;
   text-transform: uppercase;
+  .logo-icon {
+    width: 20px;
+    height: 20px;
+  }
 `;
 const ControlsStyled = styled.div`
   display: flex;
   flex-direction: row;
+  text-transform: uppercase;
 
   .menu {
     display: flex;

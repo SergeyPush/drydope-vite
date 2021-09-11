@@ -41,7 +41,7 @@ const Footer = () => {
 const WrapperStyled = styled.div`
   padding: 0 60px;
   display: flex;
-  min-height: 200px;
+  min-height: 210px;
   justify-content: space-between;
   padding-bottom: 20px;
 `;
@@ -54,11 +54,13 @@ const ColumnStyled = styled.div`
 const SubtitleStyled = styled.p`
   font-family: 'Gosha Sans', sans-serif;
   font-size: 39px;
+  margin-bottom: 20px;
 `;
 
 const ItmeStyled = styled.p`
   font-family: 'Gosha Sans', sans-serif;
   font-size: 20px;
+  margin-top: 10px;
 `;
 const Controls = styled.div``;
 const InputStyled = styled.input`
@@ -66,7 +68,9 @@ const InputStyled = styled.input`
   border: 1px solid #ffffff;
   box-sizing: border-box;
   border-radius: 30px;
-  padding: 5px 10px;
+  padding: 10px 0;
+  font-size: 20px;
+  line-height: 24px;
 
   &::placeholder {
     color: #000;
@@ -79,25 +83,29 @@ const ButtonStyled = styled.button`
   border: 1px solid #ffffff;
   box-sizing: border-box;
   border-radius: 30px;
-  color: #fff;
-  padding: 5px 20px;
+  padding: 10px 50px;
   font-family: 'Gosha Sans', sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  color: #fff;
+  text-transform: capitalize;
 `;
 
 const TitleStyled = styled.div`
   font-family: 'Gosha Sans', sans-serif;
-  font-size: 39px;
+  font-size: 50px;
   text-transform: uppercase;
   line-height: 47px;
   display: flex;
   flex-direction: row;
   align-items: center;
   margin-bottom: 28px;
+  margin-top: 5px;
 
   .logo-icon {
-    width: 30px;
-    height: 30px;
-    margin-right: 8px;
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
   }
 `;
 

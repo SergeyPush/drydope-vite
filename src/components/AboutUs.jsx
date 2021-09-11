@@ -8,7 +8,7 @@ const AboutUs = () => {
     <WrapperStyled>
       <Title title="About Us" />
       <TextStyled>
-        <ImCancelCircle className="logo-icon" /> <span>Drydope</span> is an{' '}
+        <ImCancelCircle className="logo-icon" /> <span>Drydope</span> is a{' '}
         <span className="underlined">Ukrainian</span> brand clothes with
         character. Our <span className="underlined">team</span> of creative
         people combines practicality, style and{' '}
@@ -25,13 +25,12 @@ const WrapperStyled = styled.div`
 `;
 
 const TextStyled = styled.p`
-  font-style: normal;
-  font-weight: normal;
-  font-size: 55px;
+  font-size: 50px;
   line-height: 160%;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-bottom: 180px;
+  margin-bottom: 270px;
+  font-family: 'Gosha Sans', sans-serif;
 
   .underlined {
     position: relative;

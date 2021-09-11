@@ -9,7 +9,7 @@ const Clients = () => {
   return (
     <WrapperStyled>
       <PaddingWrapper>
-        <Title title="Corporate Clients" />
+        <Title title="Corporate Clients" mb={37} />
         <ClientsTitleStyled>
           <div>branded solutions for your company</div>
           <div>
@@ -35,7 +35,7 @@ const WrapperStyled = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     width: 100%;
-    margin-bottom: 160px;
+    margin-bottom: 165px;
   }
 
   .item {
@@ -46,14 +46,14 @@ const WrapperStyled = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 150px;
+    height: 120px;
     width: 100%;
   }
 `;
 const ClientsTitleStyled = styled.div`
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-bottom: 50px;
+  margin-bottom: 18px;
   display: flex;
   justify-content: space-between;
 `;
