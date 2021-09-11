@@ -88,7 +88,7 @@ const HeroStyled = styled.div`
 
   .title-bottom {
     margin-bottom: 80px;
-    text-align: justify;
+    text-align: right;
     width: 100%;
   }
 
@@ -119,7 +119,7 @@ const ParagraphStyled = styled.p`
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #030303;
-  text-align: justify;
+  text-align: center;
   padding: 5px 60px;
 `;
 
