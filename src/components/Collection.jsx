@@ -55,7 +55,7 @@ const ImageStyled = styled.div`
   background-size: cover;
   pointer-events: none;
   transition: all 0.4s ease-in-out;
-  overflow: hidden;
+
   /* transform: translateY(100px); */
 `;
 
@@ -73,6 +73,7 @@ const ParagraphStyled = styled.p`
   font-size: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  font-family: 'Gosha Sans', sans-serif;
 `;
 
 const ListStyled = styled.ul`
