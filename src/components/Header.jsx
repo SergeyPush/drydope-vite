@@ -39,13 +39,14 @@ const Header = () => {
   );
 };
 const NavigationWrapper = styled.div`
-  height: 880px;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   background-image: url('./images/heroimage.png');
   background-repeat: no-repeat;
   background-position: bottom left;
+  background-size: contain;
   margin-bottom: 140px;
 `;
 
