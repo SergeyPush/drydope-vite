@@ -49,10 +49,10 @@ const ImageStyled = styled.div`
   top: -44px;
   transform: translateX(520px);
   border-radius: 30px;
-  z-index: 10;
+  /* z-index: 10; */
   background-position: center;
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
   pointer-events: none;
   transition: all 0.4s ease-in-out;
   overflow: hidden;

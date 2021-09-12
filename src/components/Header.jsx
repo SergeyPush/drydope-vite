@@ -16,8 +16,8 @@ const Header = () => {
             <li className="menu-item">Contacts</li>
           </ul>
           <ul className="languages">
+            <li className="language-item">Ua</li>
             <li className="language-item">En</li>
-            <li className="language-item">Ru</li>
           </ul>
           <div className="cart">Cart (0)</div>
         </ControlsStyled>
@@ -152,14 +152,14 @@ const ControlsStyled = styled.div`
     flex-direction: row;
 
     .menu-item {
-      margin-left: 30px;
+      margin-left: 20px;
     }
   }
 
   .languages {
     display: flex;
     flex-direction: row;
-    margin-left: 92px;
+    margin-left: 64px;
   }
 
   .language-item:last-child {

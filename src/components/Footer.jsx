@@ -71,6 +71,7 @@ const InputStyled = styled.input`
   padding: 10px 0;
   font-size: 20px;
   line-height: 24px;
+  width: 192px;
 
   &::placeholder {
     color: #000;
@@ -89,6 +90,7 @@ const ButtonStyled = styled.button`
   line-height: 24px;
   color: #fff;
   text-transform: capitalize;
+  width: 192px;
 `;
 
 const TitleStyled = styled.div`

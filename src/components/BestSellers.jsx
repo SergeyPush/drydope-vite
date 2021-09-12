@@ -28,10 +28,9 @@ const WrapperStyled = styled.div`
   .card-list {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(3, minmax(300px, 450px));
-    justify-content: space-around;
-    row-gap: 60px;
-    column-gap: 40px;
+    grid-template-columns: repeat(3, 390px);
+    justify-content: space-between;
+    row-gap: 62px;
   }
 `;
 
