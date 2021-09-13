@@ -18,9 +18,11 @@ const Clients = () => {
         </ClientsTitleStyled>
       </PaddingWrapper>
       <div className="clients">
-        {clients.map((item, index) => (
-          <ReactSVG src={item.image} key={index} className="item" />
-        ))}
+        <div className="clients-wrapper">
+          {clients.map((item, index) => (
+            <ReactSVG src={item.image} key={index} className="item" />
+          ))}
+        </div>
       </div>
     </WrapperStyled>
   );
@@ -32,22 +34,28 @@ const PaddingWrapper = styled.div`
 
 const WrapperStyled = styled.div`
   .clients {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    width: 100%;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
     margin-bottom: 165px;
+    height: 124px;
+  }
+  .clients-wrapper {
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; */
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding-left: 60px;
+    padding-right: 60px;
+    justify-content: space-between;
   }
 
   .item {
     align-self: center;
     justify-self: center;
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 120px;
-    width: 100%;
   }
 `;
 const ClientsTitleStyled = styled.div`

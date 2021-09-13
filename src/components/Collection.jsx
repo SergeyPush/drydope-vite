@@ -49,7 +49,6 @@ const ImageStyled = styled.div`
   top: -44px;
   transform: translateX(520px);
   border-radius: 30px;
-  /* z-index: 10; */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

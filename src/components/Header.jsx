@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { ImCancelCircle } from 'react-icons/im';
+import FullWidth from './styled/FullWidth';
 
 const Header = () => {
   return (
@@ -28,6 +29,8 @@ const Header = () => {
           <div className="hero-image"></div>
         </div>
         <p className="title title-bottom">with character</p>
+        <FullWidth text="with character" />
+
         <div>
           <button className="shop">Shop collection</button>
         </div>

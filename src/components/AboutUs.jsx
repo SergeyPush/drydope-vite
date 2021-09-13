@@ -1,6 +1,7 @@
 import React from 'react';
 import { ImCancelCircle } from 'react-icons/im';
 import Title from './Title';
+import Image from './Image';
 import styled from 'styled-components';
 
 const AboutUs = () => {
@@ -8,13 +9,42 @@ const AboutUs = () => {
     <WrapperStyled>
       <Title title="About Us" />
       <TextStyled>
-        <ImCancelCircle className="logo-icon" /> <span>Drydope</span> is a{' '}
-        <span className="underlined">Ukrainian</span> brand clothes with
-        character. Our <span className="underlined">team</span> of creative
+        <ImCancelCircle className="logo-icon" /> Drydope is a{' '}
+        <span className="underlined">
+          Ukrainian
+          <img
+            src="/images/about1.png"
+            alt="Drydope"
+            className="hidden-image"
+          />
+        </span>{' '}
+        brand clothes with character. Our team of{' '}
+        <span className="underlined">
+          creative{' '}
+          <img
+            src="/images/about2.png"
+            alt="Drydope"
+            className="hidden-image"
+          />
+        </span>{' '}
         people combines practicality, style and{' '}
-        <span className="underlined">individuality</span> in each model of
-        clothing for traveling and walking around the{' '}
-        <span className="underlined">city</span>
+        <span className="underlined">
+          individuality{' '}
+          <img
+            src="/images/about3.png"
+            alt="Drydope"
+            className="hidden-image"
+          />
+        </span>{' '}
+        in each model of clothing for traveling and walking around the{' '}
+        <span className="underlined">
+          city{' '}
+          <img
+            src="/images/about4.png"
+            alt="Drydope"
+            className="hidden-image"
+          />
+        </span>
       </TextStyled>
     </WrapperStyled>
   );
@@ -32,9 +62,24 @@ const TextStyled = styled.p`
   margin-bottom: 270px;
   font-family: 'Gosha Sans', sans-serif;
 
+  .hidden-image {
+    position: absolute;
+    /* transform: translate(65%, -50%); */
+    z-index: 20;
+    display: none;
+    left: 10px;
+    top: -80%;
+  }
+
   .underlined {
     position: relative;
+    cursor: pointer;
   }
+
+  .underlined:hover .hidden-image {
+    display: block;
+  }
+
   .logo-icon {
     width: 40px;
     height: 40px;
